@@ -1,0 +1,34 @@
+создание проекта 
+    django-admin startproject config
+
+pip3 install django psycopg djangorestframework && django-admin startproject config && cd config && python manage.py startapp libraly book
+
+
+Поля бд
+текстовые поля
+    CharField - строка с ограничением длины - name = models.CharField(max_length=100)
+    TextField - длинны текст без ограничения - description = models.TextField()
+    EmailField - Email с валидацией - email = models.EmailField 
+
+числовые поля
+    IntegerField - целое число - age = models.IntegerField()
+    FloatField - Число с плавающей точкой - weight = models.FloatField()
+
+Дата и время
+    DateField - дата(без времени) - data = models.DateField()
+    DateTimeField - дата и время - create_at = models.DateTimeField(auto_now_add=True)
+    TimeField - время без даты - start_time = models.TimeField()
+
+Логические поля
+    BooleanField = True/False - is_activate = models.BooleanField(default=True)
+
+Спец поля 
+    UUIDField - уник. индефр. - id = models.UUIDField(default=uuid.uuid64, editable=Fasle)
+
+    
+
+# Или для всех сразу
+python manage.py makemigrations
+
+# Примените миграции
+python manage.py migrate
