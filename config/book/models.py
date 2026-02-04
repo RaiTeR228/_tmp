@@ -11,15 +11,15 @@ class Author(models.Model):
 
 class Shelving(models.Model):
     shelving = models.IntegerField(verbose_name="стелаж/шкаф") # стелаж
-    shelf = models.ImageField(verbose_name="полка")
-    uuid_book = models.ImageField(verbose_name="где находится книга")
+    shelf = models.IntegerField(verbose_name="полка")
+    uuid_book = models.IntegerField(verbose_name="где находится книга")
 
     def __str__(self):
         return self.name
 
 class Page(models.Model):
     page = models.IntegerField(verbose_name="страницы") #страницы
-    uuid_book = models.ImageField(verbose_name="uuid книги")
+    uuid_book = models.IntegerField(verbose_name="uuid книги")
 
     def __str__(self):
         return self.name
