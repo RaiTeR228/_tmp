@@ -12,7 +12,7 @@ class Author(models.Model):
 class Shelving(models.Model):
     shelving = models.IntegerField(verbose_name="стелаж/шкаф") # стелаж
     shelf = models.IntegerField(verbose_name="полка")
-    uuid_book = models.IntegerField(verbose_name="где находится книга")
+    uuid_book = models.IntegerField(verbose_name="uuid книги")
 
     def __str__(self):
         return self.name
