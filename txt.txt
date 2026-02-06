@@ -32,3 +32,17 @@ python manage.py makemigrations
 
 # Примените миграции
 python manage.py migrate
+
+
+
+Тип поля	            Назначение
+
+CharField	            Строки
+IntegerField	        Целые числа
+DecimalField	        Десятичные числа
+BooleanField	        Логические значения
+DateTimeField	        Дата и время
+EmailField	            Email
+SerializerMethodField	Вычисляемое поле
+PrimaryKeyRelatedField	Связь по первичному ключу
+HyperlinkedRelatedField	Ссылка на связанный объект

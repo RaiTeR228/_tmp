@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "book",
     "libraly",
+    'account',
 ]
+
+AUTH_USE_MODEL = 'account.User'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
